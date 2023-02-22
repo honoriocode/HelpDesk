@@ -1,0 +1,7 @@
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Web.Api\obj\Debug\net7.0\HelpDesk.Web.Api.csproj.AssemblyReference.cache
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Web.Api\obj\Debug\net7.0\HelpDesk.Web.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Web.Api\obj\Debug\net7.0\HelpDesk.Web.Api.AssemblyInfoInputs.cache
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Web.Api\obj\Debug\net7.0\HelpDesk.Web.Api.AssemblyInfo.cs
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Web.Api\obj\Debug\net7.0\HelpDesk.Web.Api.csproj.CoreCompileInputs.cache
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Web.Api\obj\Debug\net7.0\HelpDesk.Web.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Web.Api\obj\Debug\net7.0\HelpDesk.Web.Api.MvcApplicationPartsAssemblyInfo.cache

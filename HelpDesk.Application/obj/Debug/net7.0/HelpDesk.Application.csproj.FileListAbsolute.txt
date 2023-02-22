@@ -1,0 +1,5 @@
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Application\obj\Debug\net7.0\HelpDesk.Application.csproj.AssemblyReference.cache
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Application\obj\Debug\net7.0\HelpDesk.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Application\obj\Debug\net7.0\HelpDesk.Application.AssemblyInfoInputs.cache
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Application\obj\Debug\net7.0\HelpDesk.Application.AssemblyInfo.cs
+C:\Users\EnzoGodoy\Desktop\HelpDesk\HelpDesk.Application\obj\Debug\net7.0\HelpDesk.Application.csproj.CoreCompileInputs.cache

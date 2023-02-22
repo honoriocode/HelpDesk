@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "fzHzVusfZA/pWHpyn3007P/ILSrVZnzYvIWwXcYZGDBOwHszGg4PYM/I4PCisvq/EfV3splyLCikull52T7qeg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\EnzoGodoy\\Desktop\\HelpDesk\\HelpDesk.Infra.Data\\HelpDesk.Infra.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
+    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\flunt.br\\2.0.0\\flunt.br.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
