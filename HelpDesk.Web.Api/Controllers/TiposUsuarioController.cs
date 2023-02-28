@@ -7,42 +7,66 @@ namespace HelpDesk.Web.Api.Controllers
     public class TiposUsuarioController
     {
         // criando uma lista para armazenar as infos
-        private static List<TiposUsuario> tiposUsuarios = new List<TiposUsuario>();
+        private static List<TiposUsuarioController> tiposUsuarios = new List<TiposUsuarioController>();
+
+        public object TiposUsuario { get; private set; }
+        public int Id { get; private set; }
 
         [HttpPost]
-        public void Adiciona([FromBody] TiposUsuario tiposUsuario)
+        public void Adiciona([FromBody] TiposUsuarioController tiposUsuario)
         {
             tiposUsuarios.Add(tiposUsuario);
 
             return CreatedAtAction(nameof(RecuperaTiposusuarioPorID, tiposUsuario: TiposUsuario), new { tiposUsuario.Id }, tiposUsuario);
         }
 
-        private void CreatedAtAction(string v, object value, TiposUsuario tiposUsuario)
+        private string nameof(Func<int, TiposUsuarioController, IActionResult> recuperaTiposusuarioPorID, object tiposUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void CreatedAtAction(string v, object value, TiposUsuarioController tiposUsuario)
         {
             throw new NotImplementedException();
         }
 
         [HttpGet]
-        public IActionResult RecuperaTiposUsuario(TiposUsuario tiposUsuario)
+        public IActionResult RecuperaTiposUsuario(TiposUsuarioController tiposUsuario)
         {
             return Ok(tiposUsuario);
         }
 
-        private IActionResult Ok(List<TiposUsuario> tiposUsuarios)
+        private IActionResult Ok(TiposUsuarioController tiposUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        private IActionResult Ok(List<TiposUsuarioController> tiposUsuarios)
         {
             throw new NotImplementedException();
         }
 
         [HttpGet("{Id}")]
-        public IActionResult RecuperaTiposusuarioPorID(int Id, TiposUsuario tiposUsuario)
+        public IActionResult RecuperaTiposusuarioPorID(int Id, TiposUsuarioController tiposUsuario)
         {
-            TiposUsuario tiposUsuario = tiposUsuarios.FirstOrDefault(tiposuser => tiposuser.Id == Id );
 
-            if (tiposUsuario != null)
+            if ((TiposUsuario)tiposUsuarios.FirstOrDefault(tiposuser => tiposuser.Id == Id) != null)
             {
-                return Ok(tiposUsuario);  
+                return Ok((TiposUsuario)tiposUsuarios.FirstOrDefault(tiposuser => tiposuser.Id == Id));  
             }
             return NotFound();
         }
+
+        private IActionResult Ok(TiposUsuario tiposUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        private IActionResult NotFound()
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 }

@@ -1,11 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "ZeMHpZ30Ro5IEhqc11RdAOBhXwX/t8cVUNW6k2xOTNZXo5UzZvgT59lJgPar5x4QF4+ztGD2lOWmHFEjrlK2cg==",
+  "dgSpecHash": "yNu/5vBA2LWNbXI3wlM/NVM41oYIN+Y8omG6EDWkBLCVedIKgKTMhzH27Mo/oBiCeqQKL/Cqo6FK8Se19eR41Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\EnzoGodoy\\Desktop\\HelpDesk\\HelpDesk.Domain\\HelpDesk.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\EnzoGodoy\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
-    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\flunt.br\\2.0.0\\flunt.br.2.0.0.nupkg.sha512"
+    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\flunt.br\\2.0.0\\flunt.br.2.0.0.nupkg.sha512",
+    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\EnzoGodoy\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

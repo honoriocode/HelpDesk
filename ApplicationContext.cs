@@ -1,6 +1,8 @@
 ﻿using System;
 
-public class ApplicationContext
+namespace HelpDesk.Infra.Data
+
+public class ApplicationContext : DbContext
 {
 	public Class1()
 	{
