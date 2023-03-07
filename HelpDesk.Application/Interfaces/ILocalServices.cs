@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HelpDesk.Application.Interfaces;
 
-public interface ILocalServices : IAppServices<RequestLocalViewModel>
+public interface ILocalServices
 {
     Task<IQueryable<ResponseLocalViewModel>> GetAll();
     Task<ResponseLocalViewModel> GetById(Guid id);

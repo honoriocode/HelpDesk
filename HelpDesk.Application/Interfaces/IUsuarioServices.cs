@@ -1,4 +1,6 @@
-﻿using HelpDesk.Application.ViewModels.Usuario;
+﻿using HelpDesk.Application.Services;
+using HelpDesk.Application.ViewModels.Usuario;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +9,11 @@ using System.Threading.Tasks;
 
 namespace HelpDesk.Application.Interfaces;
 
-public interface IUsuarioServices : IAppServices<RequestUsuarioViewModel>
+public interface IUsuarioServices
 {
     Task<IQueryable<ResponseUsuarioViewModel>> GetAll();
     Task<ResponseUsuarioViewModel> GetById(Guid id);
 
-    Task<ServiceResponse> Edit(Guid id, RequestUsuarioViewModel request);
+    Task<bool> Edit(Guid id, RequestUsuarioViewModel request);
+    IActionResult AddUsuario(AddUsuarioRequest addUsuarioRequest);
 }

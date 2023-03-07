@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HelpDesk.Application\HelpDesk.Application.csproj" />
     <ProjectReference Include="..\HelpDesk.Infra.Data\HelpDesk.Infra.Data.csproj" />
   </ItemGroup>
 

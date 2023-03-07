@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HelpDesk.Application.Interfaces;
 
-public interface ITiposUsuarioServices : IAppServices<RequestTiposUsuarioViewModel>
+public interface ITiposUsuarioServices
 {
     Task<IQueryable<ResponseTiposUsuarioViewModel>> GetAll();
     Task<ResponseTiposUsuarioViewModel> GetById(Guid id);

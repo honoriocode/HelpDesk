@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HelpDesk.Application.Interfaces;
 
-public interface IEquipamentoServices : IAppServices<RequestEquipamentoViewModel>
+public interface IEquipamentoServices
 {
     Task<IQueryable<ResponseEquipamentoViewModel>> GetAll();
     Task<ResponseEquipamentoViewModel> GetById(Guid id);

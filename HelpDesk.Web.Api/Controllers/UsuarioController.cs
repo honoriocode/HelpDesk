@@ -1,4 +1,6 @@
-﻿using HelpDesk.Domain.Entities;
+﻿using HelpDesk.Application.Interfaces;
+using HelpDesk.Application.ViewModels.Usuario;
+using HelpDesk.Domain.Entities;
 using HelpDesk.Infra.Data.Context;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,22 +10,26 @@ namespace HelpDesk.Web.Api.Controllers
     [Route("[controller]")]
     public sealed class UsuarioController : ControllerBase
     {
-        private readonly ApplicationContext _context;
-        private object request;
-        private object _usuarioServices;
+        private readonly IUsuarioServices _usuarioServices;
 
-        public UsuarioController(ApplicationContext context)
+        public UsuarioController(IUsuarioServices usuarioServices)
         {
-            _context = context;
+            _usuarioServices = usuarioServices;
         }
 
         [HttpPost]
         public IActionResult Adiciona([FromBody] UsuarioController usuario)
         {
-            _context.Usuarios.Add(usuario);
-            _contextSaveChanges();
+            try
+            {
 
-            return CreatedAtAction(nameof(RecuperaUsuarioPorID), new { Id = usuario.Id }, usuario);
+
+                return CreatedAtAction(nameof(RecuperaUsuarioPorID), new { Id = usuario.Id }, usuario);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
         }
 
@@ -41,13 +47,18 @@ namespace HelpDesk.Web.Api.Controllers
             {
                 return Ok((Usuario)Usuario.FirstOrDefault(tiposuser => tiposuser.Id == Id));
             }
-            return NotFound();
+            return NoContent();
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(Guid id, [FromBody] UsuarioController usuario)
+        public async Task<IActionResult> Put(Guid id, [FromBody] RequestUsuarioViewModel viewModel)
         {
-            var response = await _usuarioServices.Edit(id, request);
+            var response = await _usuarioServices.Edit(id, viewModel);
+
+            if (response)
+                return Ok("Usuário editado com sucesso!");
+
+            return BadRequest("Erro ao editar o usuário.");
         }
 
         [HttpDelete("{id}")]
@@ -58,9 +69,6 @@ namespace HelpDesk.Web.Api.Controllers
             return CustomResponse(response.Message);
         }
 
-        private IActionResult CustomResponse(object message)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }
